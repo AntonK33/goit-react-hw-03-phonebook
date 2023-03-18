@@ -1,0 +1,30 @@
+.contacts_h{
+    font-size: 32px;
+}
+.filter_list{
+    display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin-top: 0px;
+        padding: 10px;
+}
+.filter_item{
+    display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 2px;
+}
+.filter_p{
+    font-size: 24px;
+        margin: 0px 20px 0px 0px;
+}
+.deleteContactBtn{
+    
+        cursor: pointer;
+        padding: 2px 8px;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        color: black;
+}
