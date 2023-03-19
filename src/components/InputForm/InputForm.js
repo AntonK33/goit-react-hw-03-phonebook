@@ -12,7 +12,7 @@ export class InputForm extends Component {
 
     onInputHandler = (event) => {
         this.setState({ [event.target.name]: event.target.value })
-        localStorage.setItem({ [event.target.name]: event.target.value })
+       
     }
     
     submitForm = e => {
@@ -25,8 +25,7 @@ export class InputForm extends Component {
         
         this.props.onSubmit(newContact);
         
-        console.log(this.state)
-        console.log(newContact)
+       
         this.restart();
     } 
     

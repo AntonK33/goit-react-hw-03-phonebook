@@ -40,7 +40,7 @@ export class App extends Component {
     );
   };
   componentDidMount() {
-    console.log(this.componentDidMount);
+    
     const contactSet = localStorage.getItem('contacts');
     const parsedContact = JSON.parse(contactSet);
     if (parsedContact) {
@@ -48,13 +48,11 @@ export class App extends Component {
     }
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log(this.componentDidUpdate);
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
   }
   render() {
-    //const inputValue = this.state.name;
     return (
       <div
         style={{
